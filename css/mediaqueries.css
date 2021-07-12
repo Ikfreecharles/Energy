@@ -1,0 +1,120 @@
+/*
+ * Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
+ */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-width : 200px) 
+{
+/* Styles */
+    html {
+        font-size: 12px;
+    }
+    .heading{
+        width: 100%;
+    }
+    .menu-list{
+        width: 90%;
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-width : 760px) 
+{
+/* Styles */
+    html {
+        font-size: 14px;
+    }
+    .heading{
+        width: 60%;
+    }
+    .menu-list{
+        width: 60%;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+    html {
+        font-size: 16px;
+    }
+    .heading{
+        width: 58%;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+    html {
+        font-size: 18px;
+    }
+}
+
+/*----------------------------------------------------------*/
+@media screen
+and (max-width:500px) {
+    .body{
+        overflow-y: hidden;
+    }
+    .login{
+        z-index: 2;
+    }
+    .hamburger{
+        display: block;
+        z-index: 2;
+        cursor: pointer;
+    }
+    .iccs-navbar{
+        background-color: rgba(0, 0, 0);
+    }
+    .menu-list{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 20rem;
+        background-color: rgba(0, 0, 0);
+        width: 100%;
+        padding: 2rem 0 2rem 5rem;
+        transform: translateY(-100%);
+        transition: transform 0.5s ease-in;
+    }
+    .menu-list li{
+        opacity: 0;
+        max-width: 100%;
+        height: fit-content;
+    }
+    .menu-list li p{
+        max-width: fit-content;
+    }
+    .nav-active{
+        transform: translateY(0%);
+    }
+}
+
+@keyframes menuListFade{
+    from{
+        opacity: 0;
+        transform: translateX(10%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}

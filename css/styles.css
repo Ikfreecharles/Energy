@@ -1,0 +1,477 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/*Beginning of Stylesheet------------------------------------------------------*/
+html{
+    font-size: 16px;
+    font-family: Work Sans, sans-serif;
+    font-weight: 300;
+}
+.container {
+    width: 80%;
+    padding: 0;
+}
+.container-width-footer{
+    background-color: #f8f8f8;
+    padding-bottom: 5rem;
+}
+h3{
+    font-size: 2.3rem;
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+    margin-bottom: 3rem;
+}
+p{
+    letter-spacing: -0.02rem;
+}
+
+/* navbar styling---------------------------------------------------------------*/
+.iccs-navbar{
+    position: fixed;
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    z-index: 2;
+    transition: all 0.4s ease-in-out;
+}
+.logo{
+    height: 100%;
+    width: 15%;
+}
+.menubar{
+    height: 3.5rem;
+    width: 65%;
+    margin-top: 30px;
+}
+.menu-list{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-list li{
+    list-style-type: none;
+    height: inherit;
+}
+.understrike{
+    border-bottom: 3px solid #fff;
+    transition: all 0.1s ease;
+}
+.menu-list a {
+    text-decoration: none;
+    font-weight: 500;
+    color: inherit;
+    text-align: inherit;
+}
+.menu-list li p{
+    transition: all 0.2s ease-in;
+}
+.login, .hamburger{
+    margin-top: 30px;
+    font-weight: 500;
+    width: 10%;
+}
+.hamburger{
+    margin-top: 25px;
+    height: 4rem;
+    width: 4rem;
+    display: none;
+}
+.hamburger div{
+    height: 3px;
+    width: 22px;
+    margin: 5px;
+    background-color: #fff;
+    border-radius: 20%;
+    transition: all 0.3s ease;
+}
+
+/* first container styling------------------------------------------------------------*/
+.first-container{
+    height: 100vh;
+    background-image: url('../images/fredrick-filix-U9_pRASawlc-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.container-heading{
+    height: 75%;
+}
+.heading{
+    width: 58%;
+    color: #fff;
+}
+.heading h1{
+    font-size: 3.5rem;
+    padding-top: 13rem;
+/*     font-weight: 700;
+    letter-spacing: -0.05rem; */
+}
+.heading h2 {
+    font-size: 1.1rem;
+    padding-top: 1rem;
+    line-height: 1.6rem;
+}
+.overlay{
+    background-color: rgba(232, 245, 245, 0.2);
+    height: 25%;
+    width: 90%;
+    color: #fff;
+}
+.container-overlay{
+    height: 100%;
+    width: 90%;
+    float: right;
+}
+.data-div{
+    height: 100%;
+    display: flex;
+    overflow-x: hidden;
+    cursor: none;
+}
+.data{
+    position: relative;
+    min-width: 220px;
+    padding-top: 2.5rem;
+    margin-right: 2rem;
+}
+.data-number{
+    font-size: 3.7rem;
+    margin-top: 0.7rem;
+    font-family: Source Code Pro, monospace;
+    letter-spacing: -0.2rem;
+    font-weight: 600;
+}
+
+/*second container styling----------------------------------------------------------*/
+.second-container{
+    margin-top: 5rem;
+}
+.what-we-do-div{
+    margin: 4rem 0;
+}
+.what-we-do{
+    font-family: Source Code Pro, monospace;
+    color: #a8a8a8;
+    letter-spacing: -0.1rem;
+}
+.what-we-do-description p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: -0.1rem;
+    padding-bottom: 2rem;
+    line-height: 2rem;
+}
+.what-we-do-description{
+    border-bottom: 1px solid #dedede;
+}
+.what-we-do-inner{
+    display: flex;
+}
+.arrow{
+    height: 1.3rem;
+    width: 1.3rem;
+    margin-right: 3rem;
+    color: blue;
+}
+.arrow img{
+    height: 100%;
+    width: 100%;
+}
+
+/*third container styling----------------------------------------------------------*/
+.third-container{
+    margin-top: 5rem;
+    height: auto;
+    background-color: #f8f8f8;
+}
+.area-of-work-inner{
+    padding: 4.5rem 5rem;
+}
+.work-container-outer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 6rem;
+}
+.work-area-div{
+    display: flex;
+}
+.work-icon{
+    height: 1.4rem;
+    width: 1.4rem;
+    margin-right: 1rem;
+}
+.img-icon{
+    height: 100%;
+    width: 100%;
+}
+.work-title{
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+}
+.work-description{
+    padding-top: 0.7rem;
+    line-height: 1.5rem;
+}
+.work-description p{
+    width: 90%;
+}
+.work-container{
+    width: 100%;
+    border-bottom: 1px solid #ebebeb;
+    padding: 1.5rem;
+    height: 75px;
+    transition: all 0.3s ease-in-out;
+}
+.work-container:hover{
+    transform: translateX(4px);
+}
+.work-container:nth-child(1){
+    border-top: 1px solid #ebebeb;
+}
+.work-container:nth-child(2){
+    border-top: 1px solid #ebebeb;
+}
+.hide-work-description{
+    max-height: 0;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+.work-arrow{
+    height: 2rem;
+    width: 2rem;
+}
+.arrow-icon{
+    height: inherit;
+    width: inherit;
+}
+
+/*fourth container styling-------------------------------------------------------*/
+.fourth-container{
+    margin-top: 5rem;
+}
+.our-data{
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+    cursor: none;
+}
+.our-data-inner{
+    position: relative;
+    min-width: 240px;
+    padding: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+.our-data-inner:hover{
+    background-color: #f5fcff;
+    transform: translateY(-4px);
+    border-radius: 1rem;
+}
+.graph-title{
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+.energy-type{
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: #a8a8a8;
+}
+.graph-img{
+    height: 100px;
+}
+.graph-total{
+    font-family: Source Code Pro, monospace;
+    font-size: 2.5rem;
+    letter-spacing: -0.2rem;
+    font-weight: 400;
+    text-align: left;
+}
+.graph-highlight{
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #a8a8a8;
+    text-align: left;
+}
+[data-tooltip]:before {            
+    position : relative;
+     content : attr(data-tooltip);
+     opacity : 0;
+}
+[data-tooltip]:hover:before {        
+    opacity : 1;
+}
+.hint{
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transform-origin: 100% 100%;
+    transition: opacity 0.2s ease;
+}
+.hint p{
+    padding: 1rem;
+    background-color: #000;
+    color: #fff;
+    border-radius: 2rem;
+}
+
+/*fifth container styling----------------------------------------------------------*/
+.fifth-container{
+    margin-top: 5rem;
+}
+.article-div-outer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+    column-gap: 5rem;
+}
+.articles-div{
+    width: 100%;
+    border-bottom: 1px solid #f4f4f4;
+}
+.article-date-type{
+    display: flex;
+    font-size: 0.6rem;
+    color: #a8a8a8;
+    font-weight: 500;
+}
+.article-type{
+    padding: 3px;
+    background-color: #a8a8a8;
+    border-radius: 5px;
+    color: #000;
+}
+.article-date{
+    margin: 3px 0 0 0.4rem;
+}
+.article-heading-body{
+    margin: 0.5rem 0;
+}
+.article-heading{
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: -0.05rem;
+}
+.article-body{
+    color: #a8a8a8;
+    margin-top: 0.3rem;
+    height: 40px;
+    overflow: hidden;
+}
+.article-metadata{
+    display: flex;
+    margin: 1.7rem 0;
+}
+.article-creator-image{
+    display: flex;
+}
+.creator-names{
+    font-family: Source Code Pro, monospace;
+    color: #a8a8a8;
+    font-size: 0.6rem;
+    margin: 0 0 0 15px;
+    padding-top: .4rem;
+}
+.creator-img{
+    width: 1.5rem;
+    height: 1.5rem;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+    filter: grayscale(100);
+    margin-right: -3px;
+    border: 1px solid #fff;
+}
+
+/*sixth container styling----------------------------------------------------*/
+.sixth-container{
+    margin-top: 5rem;
+}
+.get-involved{
+    font-size: 3.5rem;
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+    padding-top: 5rem;
+}
+.line{
+    height: 1px;
+    width: 100%;
+    margin: 6rem 0;
+    background-color: #dfdfdf;
+}
+.newsletter-div{
+    margin-bottom: 4rem;
+}
+.footer-div li{
+    list-style-type: none;
+    margin-bottom: 0.4rem;
+}
+.footer-div a, .address{
+    text-decoration: none;
+    color: #a8a8a8;
+    letter-spacing: -0.05rem;
+    transition: color,font-weight 0.3s ease;
+}
+.footer-div a:hover{
+    color: #0900ff;
+    font-weight: 500;
+}
+.footer-1 a {
+    color: #000;
+    font-weight: 600;
+}
+.footer-1 li{
+    font-size: 1.1rem;
+    letter-spacing: -0.1rem;
+    transition: all o.3s ease;
+}
+.footer-1 li:hover{
+    color: #0900ff;
+    font-weight: 700;
+}
+.option-heading{
+    font-size: 0.9rem;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+    text-decoration: underline;
+}
+.learn-more{
+    margin-top: 4rem;
+}
+.learn-more a{
+    width: 10rem;
+    height: 3rem;
+    border: 2px solid #000;
+    padding: 1rem;
+    text-decoration: none;
+    color: #000;
+    transition: all 0.2s ease-in-out;
+}
+
+/*---------------------------------------------------------*/
